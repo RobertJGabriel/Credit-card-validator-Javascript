@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Credit Card Valadation</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <script src="creditCard.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid main" >
+        <div class="row" >
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6">
+                <div class="well page active">
+                    <form name="myForm" onsubmit="return main();" method="get">
+                         <h1>Credit Card Valadation in Javascript</h1>
+                        <input type="text" class="form-control"  id="creditcard" placeholder="Credit Card Number">
+                        <input type="submit" id="button" class="btn btn-primary" value="Valadate">
+                    </form>
+                </div>
+                <div id="results">
+                
+                </div>
+            </div>
+            <div class="col-xs-3"></div>
+        </div>
+    </div>
+
+    <!-- Your site ends -->
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+
+</body>
+
+</html>
