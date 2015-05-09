@@ -85,15 +85,12 @@ function checksum(finished) { //Start of Function
 
 
 function results(bool){
- alert(bool);
-    if(bool === "false"){
-        
+    if(bool == 'false'){
     }else{  
     var elem = document.createElement("img");
     elem.setAttribute("src", "img/" + cardType + ".png");
     elem.setAttribute("alt", cardType);
     document.getElementById("results").appendChild(elem);
-        alert(cardType);
     }
     
 }

@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer916181303 = (function () {
+var __recognizer536107817 = (function () {
     'use strict';
 
     var global = this;
@@ -159,24 +159,24 @@ var __recognizer916181303 = (function () {
 
 var cardType = 'null';
 function main() {
-    __recognizer916181303.logEntry([
+    __recognizer536107817.logEntry([
         23,
         9,
         23,
         13
     ], arguments);
-    var creditCard = __recognizer916181303.logProbe([
+    var creditCard = __recognizer536107817.logProbe([
             24,
             59,
             24,
             64
         ], function () {
-            var obj = __recognizer916181303.logProbe([
+            var obj = __recognizer536107817.logProbe([
                     24,
                     21,
                     24,
                     29
-                ], document), fn = __recognizer916181303.logProbe([
+                ], document), fn = __recognizer536107817.logProbe([
                     24,
                     30,
                     24,
@@ -184,24 +184,24 @@ function main() {
                 ], obj.getElementById);
             return fn.apply(obj, arguments);
         }.bind(this)('creditcard').value);
-    var length = __recognizer916181303.logProbe([
+    var length = __recognizer536107817.logProbe([
             25,
             25,
             25,
             31
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             25,
             14,
             25,
             24
         ], creditCard).length);
     var numberOne = function () {
-            var obj = __recognizer916181303.logProbe([
+            var obj = __recognizer536107817.logProbe([
                     26,
                     17,
                     26,
                     27
-                ], creditCard), fn = __recognizer916181303.logProbe([
+                ], creditCard), fn = __recognizer536107817.logProbe([
                     26,
                     28,
                     26,
@@ -209,138 +209,138 @@ function main() {
                 ], obj.charAt);
             return fn.apply(obj, arguments);
         }.bind(this)(0);
-    if (__recognizer916181303.logProbe([
+    if (__recognizer536107817.logProbe([
             28,
             6,
             28,
             12
-        ], length) <= 16 && __recognizer916181303.logProbe([
+        ], length) <= 16 && __recognizer536107817.logProbe([
             28,
             22,
             28,
             28
-        ], length) >= 13 && __recognizer916181303.logProbe([
+        ], length) >= 13 && __recognizer536107817.logProbe([
             28,
             40,
             28,
             49
         ], numberOne) == 4) {
         cardType = 'visa';
-        __recognizer916181303.logProbe([
+        __recognizer536107817.logProbe([
             30,
             2,
             30,
             25
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             30,
             2,
             30,
             6
-        ], math)(__recognizer916181303.logProbe([
+        ], math)(__recognizer536107817.logProbe([
             30,
             7,
             30,
             17
-        ], creditCard), __recognizer916181303.logProbe([
+        ], creditCard), __recognizer536107817.logProbe([
             30,
             18,
             30,
             24
         ], length)));
-    } else if (__recognizer916181303.logProbe([
+    } else if (__recognizer536107817.logProbe([
             31,
             13,
             31,
             19
-        ], length) == 15 && __recognizer916181303.logProbe([
+        ], length) == 15 && __recognizer536107817.logProbe([
             31,
             31,
             31,
             40
         ], numberOne) == 3) {
         cardType = 'americanexpress';
-        __recognizer916181303.logProbe([
+        __recognizer536107817.logProbe([
             33,
             2,
             33,
             25
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             33,
             2,
             33,
             6
-        ], math)(__recognizer916181303.logProbe([
+        ], math)(__recognizer536107817.logProbe([
             33,
             7,
             33,
             17
-        ], creditCard), __recognizer916181303.logProbe([
+        ], creditCard), __recognizer536107817.logProbe([
             33,
             18,
             33,
             24
         ], length)));
-    } else if (__recognizer916181303.logProbe([
+    } else if (__recognizer536107817.logProbe([
             34,
             13,
             34,
             19
-        ], length) == 16 && __recognizer916181303.logProbe([
+        ], length) == 16 && __recognizer536107817.logProbe([
             34,
             31,
             34,
             40
         ], numberOne) == 5) {
         cardType = 'mastercard';
-        __recognizer916181303.logProbe([
+        __recognizer536107817.logProbe([
             36,
             2,
             36,
             25
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             36,
             2,
             36,
             6
-        ], math)(__recognizer916181303.logProbe([
+        ], math)(__recognizer536107817.logProbe([
             36,
             7,
             36,
             17
-        ], creditCard), __recognizer916181303.logProbe([
+        ], creditCard), __recognizer536107817.logProbe([
             36,
             18,
             36,
             24
         ], length)));
-    } else if (__recognizer916181303.logProbe([
+    } else if (__recognizer536107817.logProbe([
             37,
             13,
             37,
             19
-        ], length) == 16 && __recognizer916181303.logProbe([
+        ], length) == 16 && __recognizer536107817.logProbe([
             37,
             31,
             37,
             40
         ], numberOne) == 6) {
         cardType = 'discover';
-        __recognizer916181303.logProbe([
+        __recognizer536107817.logProbe([
             39,
             2,
             39,
             25
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             39,
             2,
             39,
             6
-        ], math)(__recognizer916181303.logProbe([
+        ], math)(__recognizer536107817.logProbe([
             39,
             7,
             39,
             17
-        ], creditCard), __recognizer916181303.logProbe([
+        ], creditCard), __recognizer536107817.logProbe([
             39,
             18,
             39,
@@ -351,7 +351,7 @@ function main() {
     }
 }
 function math(creditCard, length) {
-    __recognizer916181303.logEntry([
+    __recognizer536107817.logEntry([
         47,
         9,
         47,
@@ -361,165 +361,165 @@ function math(creditCard, length) {
             0,
             0
         ];
-    for (var i = __recognizer916181303.logProbe([
+    for (var i = __recognizer536107817.logProbe([
                 50,
                 14,
                 50,
                 20
-            ], length) - 2; __recognizer916181303.logProbe([
+            ], length) - 2; __recognizer536107817.logProbe([
             50,
             26,
             50,
             27
         ], i) >= 0; i -= 2) {
-        var x = __recognizer916181303.logProbe([
+        var x = __recognizer536107817.logProbe([
                 51,
                 10,
                 51,
                 43
-            ], __recognizer916181303.logProbe([
+            ], __recognizer536107817.logProbe([
                 51,
                 10,
                 51,
                 18
             ], parseInt)(function () {
-                var obj = __recognizer916181303.logProbe([
+                var obj = __recognizer536107817.logProbe([
                         51,
                         19,
                         51,
                         29
-                    ], creditCard), fn = __recognizer916181303.logProbe([
+                    ], creditCard), fn = __recognizer536107817.logProbe([
                         51,
                         30,
                         51,
                         36
                     ], obj.charAt);
                 return fn.apply(obj, arguments);
-            }.bind(this)(__recognizer916181303.logProbe([
+            }.bind(this)(__recognizer536107817.logProbe([
                 51,
                 37,
                 51,
                 38
             ], i)), 10)) * 2;
-        if (__recognizer916181303.logProbe([
+        if (__recognizer536107817.logProbe([
                 52,
                 6,
                 52,
                 7
             ], x) > 10) {
-            x = __recognizer916181303.logProbe([
+            x = __recognizer536107817.logProbe([
                 52,
                 19,
                 52,
                 27
-            ], __recognizer916181303.logProbe([
+            ], __recognizer536107817.logProbe([
                 52,
                 19,
                 52,
                 24
-            ], split)(__recognizer916181303.logProbe([
+            ], split)(__recognizer536107817.logProbe([
                 52,
                 25,
                 52,
                 26
             ], x)));
         }
-        cardNumber[0] += __recognizer916181303.logProbe([
+        cardNumber[0] += __recognizer536107817.logProbe([
             53,
             19,
             53,
             20
         ], x);
     }
-    for (var i = __recognizer916181303.logProbe([
+    for (var i = __recognizer536107817.logProbe([
                 56,
                 14,
                 56,
                 20
-            ], length) - 1; __recognizer916181303.logProbe([
+            ], length) - 1; __recognizer536107817.logProbe([
             56,
             26,
             56,
             27
         ], i) >= 0; i -= 2) {
-        var number = __recognizer916181303.logProbe([
+        var number = __recognizer536107817.logProbe([
                 57,
                 15,
                 57,
                 48
-            ], __recognizer916181303.logProbe([
+            ], __recognizer536107817.logProbe([
                 57,
                 15,
                 57,
                 23
             ], parseInt)(function () {
-                var obj = __recognizer916181303.logProbe([
+                var obj = __recognizer536107817.logProbe([
                         57,
                         24,
                         57,
                         34
-                    ], creditCard), fn = __recognizer916181303.logProbe([
+                    ], creditCard), fn = __recognizer536107817.logProbe([
                         57,
                         35,
                         57,
                         41
                     ], obj.charAt);
                 return fn.apply(obj, arguments);
-            }.bind(this)(__recognizer916181303.logProbe([
+            }.bind(this)(__recognizer536107817.logProbe([
                 57,
                 42,
                 57,
                 43
             ], i)), 10));
-        cardNumber[1] += __recognizer916181303.logProbe([
+        cardNumber[1] += __recognizer536107817.logProbe([
             58,
             19,
             58,
             25
         ], number);
     }
-    var finished = __recognizer916181303.logProbe([
+    var finished = __recognizer536107817.logProbe([
             61,
             18,
             61,
             60
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             61,
             18,
             61,
             26
-        ], parseInt)(__recognizer916181303.logProbe([
+        ], parseInt)(__recognizer536107817.logProbe([
             61,
             38,
             61,
             39
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             61,
             27,
             61,
             37
-        ], cardNumber)[1]) + __recognizer916181303.logProbe([
+        ], cardNumber)[1]) + __recognizer536107817.logProbe([
             61,
             54,
             61,
             55
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             61,
             43,
             61,
             53
         ], cardNumber)[0]), 10));
-    __recognizer916181303.logProbe([
+    __recognizer536107817.logProbe([
         62,
         3,
         62,
         21
-    ], __recognizer916181303.logProbe([
+    ], __recognizer536107817.logProbe([
         62,
         3,
         62,
         11
-    ], checksum)(__recognizer916181303.logProbe([
+    ], checksum)(__recognizer536107817.logProbe([
         62,
         12,
         62,
@@ -527,19 +527,19 @@ function math(creditCard, length) {
     ], finished)));
 }
 function split(x) {
-    __recognizer916181303.logEntry([
+    __recognizer536107817.logEntry([
         67,
         9,
         67,
         14
     ], arguments);
     var n = function () {
-            var obj = __recognizer916181303.logProbe([
+            var obj = __recognizer536107817.logProbe([
                     68,
                     9,
                     68,
                     10
-                ], x), fn = __recognizer916181303.logProbe([
+                ], x), fn = __recognizer536107817.logProbe([
                     68,
                     11,
                     68,
@@ -547,23 +547,23 @@ function split(x) {
                 ], obj.toString);
             return fn.apply(obj, arguments);
         }.bind(this)();
-    var digitOne = __recognizer916181303.logProbe([
+    var digitOne = __recognizer536107817.logProbe([
             69,
             16,
             69,
             42
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             69,
             16,
             69,
             24
         ], parseInt)(function () {
-            var obj = __recognizer916181303.logProbe([
+            var obj = __recognizer536107817.logProbe([
                     69,
                     25,
                     69,
                     26
-                ], n), fn = __recognizer916181303.logProbe([
+                ], n), fn = __recognizer536107817.logProbe([
                     69,
                     27,
                     69,
@@ -571,23 +571,23 @@ function split(x) {
                 ], obj.charAt);
             return fn.apply(obj, arguments);
         }.bind(this)(0), null));
-    var digitTwo = __recognizer916181303.logProbe([
+    var digitTwo = __recognizer536107817.logProbe([
             70,
             16,
             70,
             42
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             70,
             16,
             70,
             24
         ], parseInt)(function () {
-            var obj = __recognizer916181303.logProbe([
+            var obj = __recognizer536107817.logProbe([
                     70,
                     25,
                     70,
                     26
-                ], n), fn = __recognizer916181303.logProbe([
+                ], n), fn = __recognizer536107817.logProbe([
                     70,
                     27,
                     70,
@@ -595,13 +595,13 @@ function split(x) {
                 ], obj.charAt);
             return fn.apply(obj, arguments);
         }.bind(this)(1), null));
-    digitOne += __recognizer916181303.logProbe([
+    digitOne += __recognizer536107817.logProbe([
         71,
         13,
         71,
         21
     ], digitTwo);
-    return __recognizer916181303.logProbe([
+    return __recognizer536107817.logProbe([
         72,
         8,
         72,
@@ -609,36 +609,36 @@ function split(x) {
     ], digitOne);
 }
 function checksum(finished) {
-    __recognizer916181303.logEntry([
+    __recognizer536107817.logEntry([
         77,
         9,
         77,
         17
     ], arguments);
-    if (__recognizer916181303.logProbe([
+    if (__recognizer536107817.logProbe([
             78,
             5,
             78,
             13
         ], finished) % 10 === 0) {
-        __recognizer916181303.logProbe([
+        __recognizer536107817.logProbe([
             79,
             8,
             79,
             21
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             79,
             8,
             79,
             15
         ], results)(true));
     } else {
-        __recognizer916181303.logProbe([
+        __recognizer536107817.logProbe([
             81,
             2,
             81,
             16
-        ], __recognizer916181303.logProbe([
+        ], __recognizer536107817.logProbe([
             81,
             2,
             81,
@@ -647,122 +647,113 @@ function checksum(finished) {
     }
 }
 function results(bool) {
-    __recognizer916181303.logEntry([
+    __recognizer536107817.logEntry([
         87,
         9,
         87,
         16
     ], arguments);
-    __recognizer916181303.logProbe([
+    __recognizer536107817.logProbe([
         88,
         1,
         88,
         12
-    ], __recognizer916181303.logProbe([
+    ], __recognizer536107817.logProbe([
         88,
         1,
         88,
         6
-    ], alert)(__recognizer916181303.logProbe([
+    ], alert)(__recognizer536107817.logProbe([
         88,
         7,
         88,
         11
     ], bool)));
-    if (__recognizer916181303.logProbe([
+    if (__recognizer536107817.logProbe([
             89,
             7,
             89,
             11
-        ], bool) === false) {
+        ], bool) == 'false') {
     } else {
-        var result = function () {
-                var obj = __recognizer916181303.logProbe([
-                        92,
-                        17,
-                        92,
-                        25
-                    ], document), fn = __recognizer916181303.logProbe([
-                        92,
-                        26,
-                        92,
-                        40
-                    ], obj.getElementById);
-                return fn.apply(obj, arguments);
-            }.bind(this)('myScript');
         var elem = function () {
-                var obj = __recognizer916181303.logProbe([
-                        93,
+                var obj = __recognizer536107817.logProbe([
+                        92,
                         15,
-                        93,
+                        92,
                         23
-                    ], document), fn = __recognizer916181303.logProbe([
-                        93,
+                    ], document), fn = __recognizer536107817.logProbe([
+                        92,
                         24,
-                        93,
+                        92,
                         37
                     ], obj.createElement);
                 return fn.apply(obj, arguments);
             }.bind(this)('img');
         (function () {
-            var obj = __recognizer916181303.logProbe([
-                    94,
+            var obj = __recognizer536107817.logProbe([
+                    93,
                     4,
-                    94,
+                    93,
                     8
-                ], elem), fn = __recognizer916181303.logProbe([
-                    94,
+                ], elem), fn = __recognizer536107817.logProbe([
+                    93,
                     9,
-                    94,
+                    93,
                     21
                 ], obj.setAttribute);
             return fn.apply(obj, arguments);
-        }.bind(this)('src', 'img/' + __recognizer916181303.logProbe([
-            94,
+        }.bind(this)('src', 'img/' + __recognizer536107817.logProbe([
+            93,
             38,
-            94,
+            93,
             46
         ], cardType) + '.png'));
         (function () {
-            var obj = __recognizer916181303.logProbe([
-                    95,
+            var obj = __recognizer536107817.logProbe([
+                    94,
                     4,
-                    95,
+                    94,
                     8
-                ], elem), fn = __recognizer916181303.logProbe([
-                    95,
+                ], elem), fn = __recognizer536107817.logProbe([
+                    94,
                     9,
-                    95,
+                    94,
                     21
                 ], obj.setAttribute);
             return fn.apply(obj, arguments);
-        }.bind(this)('alt', __recognizer916181303.logProbe([
-            95,
+        }.bind(this)('alt', __recognizer536107817.logProbe([
+            94,
             29,
-            95,
+            94,
             37
         ], cardType)));
         (function () {
             var obj = function () {
-                    var obj = __recognizer916181303.logProbe([
-                            96,
+                    var obj = __recognizer536107817.logProbe([
+                            95,
                             4,
-                            96,
+                            95,
                             12
-                        ], document), fn = __recognizer916181303.logProbe([
-                            96,
+                        ], document), fn = __recognizer536107817.logProbe([
+                            95,
                             13,
-                            96,
+                            95,
                             27
                         ], obj.getElementById);
                     return fn.apply(obj, arguments);
-                }.bind(this)('results'), fn = __recognizer916181303.logProbe([
-                    96,
+                }.bind(this)('results'), fn = __recognizer536107817.logProbe([
+                    95,
                     39,
-                    96,
+                    95,
                     50
                 ], obj.appendChild);
             return fn.apply(obj, arguments);
-        }.bind(this)('elem'));
+        }.bind(this)(__recognizer536107817.logProbe([
+            95,
+            51,
+            95,
+            55
+        ], elem)));
     }
 }
